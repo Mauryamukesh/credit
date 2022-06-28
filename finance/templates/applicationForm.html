@@ -1,0 +1,127 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/applicationForm.css' %}">
+</head>
+<body>
+    <div class="application_header">
+        <h1>application form</h1>
+    </div>
+    <div class="applicationForm_container">
+        <form action="" name="applicationForm" onsubmit=" return validateApplication()">
+            <div class="application_title">
+                <label for="">title :</label>
+                <select name="ftitle" id="title"></select>
+            </div>
+            <div class="application_details">
+                <div class="applicationCol application_firstName">
+                    <div class="app_name">
+                        <label for="">name</label><p id="username"></p>
+                    </div>
+                    <input type="text" name="fname" placeholder="first name">
+                </div>
+                <div class="applicationCol application_lastName">
+                    <div class="app_name">
+                        <label for="">last name</label><p id="lastname"></p>
+                    </div>
+                    <input type="text" name="flast" placeholder="last name">
+                </div>
+                <div class="applicationCol application_gender">
+                    <div class="app_name">
+                        <label for="">gender</label><p id="appGender"></p>
+                    </div>
+                    <select name="fgender" id="gender"></select>
+                </div>
+                <div class="applicationCol application_mobileNo">
+                    <div class="app_name">
+                        <label for="">phone no.</label><p id="phoneNumber"></p>
+                    </div>
+                    <input type="number" placeholder="phone no." name="fnumber" id="">
+                </div>
+                <div class="applicationCol emailId">
+                    <div class="app_name">
+                        <label for="">email</label><p id="emailID"></p>
+                    </div>
+                    <input type="email" placeholder="email" name="femail" id="">
+                </div>
+                <div class="applicationCol application_marital">
+                    <div class="app_name">
+                        <label for="">marital status</label><p id="marritalStatus"></p>
+                    </div>
+                    <select name="fmarital" id="marital"></select>
+                </div>
+                <div class="applicationCol panCardno">
+                    <div class="app_name">
+                        <label for="">pan no.</label><p id="panCard"></p>
+                    </div>
+                    <input type="text" placeholder="Pan card no." name="fpan" id="">
+                </div>
+                <div class="applicationCol aadharCard">
+                    <div class="app_name">
+                        <label for="">aadhar no.</label><p id="aadharNum"></p>
+                    </div>
+                    <input type="text" placeholder="aadhar no." name="faadhar" id="">
+                </div>
+                <div class="applicationCol address">
+                    <div class="app_name">
+                        <label for="">address</label><p id="addressName"></p>
+                    </div>
+                    <input type="text" placeholder="address" name="faddress" id="">
+                </div>
+                <div class="applicationCol postel">
+                    <div class="app_name">
+                        <label for="">postel / zip code</label><p id="zipcode"></p>
+                    </div>
+                    <input type="text" placeholder="postel/ zip code" name="fpostel" id="">
+                </div>
+                <div class="applicationCol city">
+                    <div class="app_name">
+                        <label for="">city / state</label><p id="app_state"></p>
+                    </div>
+                    <div>
+                        <select onchange="print_city('state',this.selectedIndex);" name="fcity" id="s"></select>
+                        <select name="fcityName" id="state"></select>
+                    </div>
+                </div>
+                <div class="applicationCol street">
+                    <label for="">street</label>
+                    <input type="text" placeholder="street" name="fstreet" id="">
+                </div>
+                <div class="applicationCol occupation">
+                    <div class="app_name">
+                        <label for="">occupation</label><p id="app_occupation"></p>
+                    </div>
+                    <input type="text" placeholder="occupation" name="foccupation" id="">
+                </div>
+                <div class="applicationCol grossmonthly">
+                    <div class="app_name">
+                        <label for="">gross monthly income</label><p id="monthly"></p>
+                    </div>
+                    <select name="fgross" id="grossmonthly"></select>
+                </div>
+                <div class="applicationCol application_purpose">
+                    <div class="app_name">
+                        <label for="">application</label><p id="application_pur"></p>
+                    </div>
+                    <select name="fApplicationpurpose" id="application"></select>
+                    <!-- <input type="text" placeholder="application" name="" id=""> -->
+                </div>
+                <div class="applicationCol purpose">
+                    <label for="">purpose of fund</label>
+                    <input type="fpurpose" placeholder="purpose" name="" id="">
+                </div>
+            </div>
+            <div class="submit">
+                <input type="submit" name="" id="" value="submit">
+            </div>
+        </form>
+    </div>
+    <script src="{% static 'js/applicationform.js' %}"></script>
+
+    <script>
+        print_state('s');
+    </script> 
+</body>
+{% endblock content %}

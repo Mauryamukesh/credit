@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <div class="credit_home_container_1">
+        <div class="credit_sub_home1">
+            <div class="credit_sub_home_images1">
+                <img src="{% static 'images/businessLoan.png' %}" alt="">
+            </div>
+            <div class="credit_business">
+                <p>Business line of <br>credit</p>
+            </div>
+        </div>
+        <div class="credit_sub_home1">
+            <div class="credit_sub_home_images1">
+                <img src="{% static 'images/home1.png' %}" alt="">
+            </div>
+            <div class="credit_business">
+                <p>Home Loan</p>
+            </div>
+        </div>
+        <div class="credit_sub_home1">
+            <div class="credit_sub_home_images1">
+                <img src="{% static 'images/personalLoan.png' %}" alt="">
+            </div>
+            <div class="credit_business">
+                <p>Personal Loan</p>
+            </div>
+        </div>
+        <div class="credit_sub_home1">
+            <div class="credit_sub_home_images1">
+                <img src="{% static 'images/carloan.png' %}" alt="">
+            </div>
+            <div class="credit_business">
+                <p>Car Loan</p>
+            </div>
+        </div>
+    </div>
+    <div class="credit_home_loan">
+        <div class="left_credit_home">
+            <div class="credit_perfect">
+                <p>Find the <br>perfect loan <br>for you...</p>
+            </div>
+            <div class="btn">
+                <button><a href="{% url 'contact' %}">contact us</a></button>
+            </div>
+        </div>
+        <div class="right_credit_home">
+            <div class="credit_home_card">
+                <img src="{% static 'images/Group4.png' %}" alt="">
+            </div>
+            <div class="credit_home_card_person">
+                <img src="{% static 'images/personholdingcurrency.png' %}" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="credit_service">
+        <div class="credit_home_our_service">
+            <h1>our service</h1>
+        </div>
+        <div class="credit_home_service">
+            <div class="credit_home_speed">
+                <div class="credit_home_speed_images">
+                    <img src="{% static 'images/speed.png' %}" alt="">
+                </div>
+                <div class="credit_home_speed_text">
+                    <p>Funding in as soon as <br>within week</p>
+                </div>
+            </div>
+            <div class="credit_home_speed">
+                <div class="credit_home_speed_images">
+                    <img src="{% static 'images/easy.png' %}" alt="">
+                </div>
+                <div class="credit_home_speed_text">
+                    <p>Simple paper work <br>application</p>
+                </div>
+            </div>
+            <div class="credit_home_speed">
+                <div class="credit_home_speed_images">
+                    <img src="{% static 'images/note.png' %}" alt="">
+                </div>
+                <div class="credit_home_speed_text">
+                    <p>No hiddin term and <br>condition</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="credit_home_compare">
+        <div class="credit_home_left_compare">
+            <img src="{% static 'images/guitar.png' %}" alt="">
+        </div>
+        <div class="credit_home_right_compare">
+            <p>
+                Compare loans from multiple providers in one place...
+            </p>
+        </div>
+    </div>
+    <div class="credit_business_report">
+        <div class="credit_business_report_images">
+            <img src="{% static 'images/business-report.png' %}" alt="">
+        </div>
+        <div class="credit_business_report_images">
+            <img src="{% static 'images/bar-chart.png' %}" alt="">
+        </div>
+        <div class="credit_business_report_images">
+            <img src="{% static 'images/business.png' %}" alt="">
+        </div>
+    </div>
+</body>
+{% endblock content %}
+        

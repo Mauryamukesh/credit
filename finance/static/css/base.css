@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400&family=Architects+Daughter&family=Baloo+Bhai+2:wght@400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,500;1,700&family=Patrick+Hand&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;1,100;1,200;1,300;1,400;1,500;1,800&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Start header part */
+header
+{
+    padding: 0 1rem;
+    width: 100%;
+    height: 6rem;
+    background-color: #fffafa;
+    display: flex;
+    z-index: 4;
+    justify-content: space-between;
+}
+/* menu bar */
+.menu-bar 
+{
+    display: none;
+    margin: auto 0 auto 1rem;
+    cursor: pointer;
+}
+.bar
+{
+
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #111;
+}
+/* -------------LOGO------------------ */
+.logo
+{
+    display: flex;
+    margin-right: 2rem;
+}
+.credit_image
+{
+    margin: auto;
+}
+.credit_image img
+{
+    width: 4.5rem;
+}
+.creditIt
+{
+    margin: auto;
+}
+.creditIt a
+{
+    text-decoration: none;
+    font-size: 3rem;
+    color: #222;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* --------End Logo--------- */
+/* --------Start Navbar--------- */
+.navbar
+{
+    margin: auto;
+}
+.navbar ul
+{
+    display: flex;
+}
+.navbar ul li
+{
+    list-style-type: none;
+}
+.navbar ul li a
+{
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 0 1rem;
+    text-transform: capitalize;
+    color: #222;
+    font-family: monospace;
+    /* background-size: 0 100%;
+    transition: background-size 1s 0s; */
+}
+.navbar ul li a:hover
+{
+    /* padding: 0.3rem 0.5rem; */
+    background: rgb(164,255,127);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgba(164,255,127,1) 0%, rgba(8,247,196,1) 100%);
+}
+.sticky
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+/* --------End Navbar--------- */
+/* -------Apply for loan--------- */
+.credit_apply
+{
+    margin: auto 2rem;
+}
+.credit_apply button
+{
+    text-transform: capitalize;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    /* background-color: transparent; */
+    /* background-color: transparent;
+    padding: 0.7rem 0.8rem; */
+    /* border: 1px solid red; */
+    /* border-radius: 10px;
+    position: absolute;
+    margin-right: -7rem;
+    margin-left: -6rem; */
+}
+.credit_apply button a
+{
+    text-decoration: none;
+    color: #222;
+    font-size: 1rem;
+    border: 0.1rem solid #222;
+    position: absolute;
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    margin-top: -1.5rem;
+    margin-left: -7rem;
+    margin-right: -7rem;
+    /* border: 2px solid rgb(41, 252, 41); */
+    background: linear-gradient(to right, rgb(1,1,1), rgb(1, 1, 1));
+    background-repeat: no-repeat;
+    color: #111;
+    background-size: 0 100%;
+    transition: background-size 1s 0s;
+    /* padding: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 10px;
+    position: absolute;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #2ef32e;
+    text-transform: capitalize;
+    font-family: sans-serif; */
+}
+.credit_apply button a:hover
+{
+    color: #2ef32e;
+    background-size: 100% 100%;
+}
+/* -------End of Apply for loan--------- */
+
+/* -----------Start Footer -------------- */
+footer
+{
+    width: 100%;
+    height: 30rem;
+    border-radius: 20px;
+    /* bottom: 0; */
+    background-color: #111;
+}
+footer .credit_base_footer
+{
+    display: flex;
+    width: 70%;
+    padding: 2rem 3rem;
+    justify-content: space-between;
+}
+.credit_footer1 ul
+{
+    text-align: center;
+}
+.credit_footer1 ul li
+{
+    list-style-type: none;
+    padding: 0.5rem 0;
+}
+.credit_footer1 ul li a
+{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+
+.credit_footer2 .credit_sub_footer
+{
+    display: flex;
+}
+.credit_footer2 .credit_sub_footer .credit_image img
+{
+    width: 6rem;
+}
+.credit_footer2 .credit_sub_footer .creditIt
+{
+    margin-top: 2rem;
+    margin-left: -3rem;
+}
+.credit_footer2 .credit_sub_footer .creditIt a
+{
+    font-size: 2.5rem;
+    color: #fff;
+}
+.credit_footer2 .creditInvite h1
+{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #BB0ACF;
+    background: linear-gradient(to right, #BB0ACF 0%, #F7B825 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.credit_social_media
+{
+    float: right;
+    margin-right: 10rem;
+    margin-top: -3rem;
+}
+.credit_social_media h1
+{
+    font-size: 3rem;
+    color: #fff;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+}
+.credit_social_media .credit_social
+{
+    display: flex;
+}
+.credit_social_media .credit_social .credit_social_images1
+{
+    margin: auto;
+    margin-right: 1rem;
+}
+.credit_social_media .credit_social .credit_social_images1 img
+{
+    width: 6rem;
+}
+.credit_social_media .credit_social .credit_social_images2
+{
+    margin: auto;
+    margin-left: 1rem;
+}
+.credit_social_media .credit_social .credit_social_images2 img
+{
+    width: 8rem;
+}
+/* -----------End Footer -------------- */
+/* ----------media quaries------------- */
+@media(max-width:1200px)
+{
+    html{
+        font-size: 60%;
+    }
+}
+@media(max-width:767px)
+{
+    .menu-bar
+    {
+        display: block;
+    }
+    .menu-bar.active .bar:nth-child(2)
+    {
+        opacity: 0;
+    }
+    .menu-bar.active .bar:nth-child(1)
+    {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .menu-bar.active .bar:nth-child(3)
+    {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .navbar
+    {
+        position: absolute;
+        left: -110%;
+        top: 100%;
+        background-color: #262626;
+        width: 100%;
+        transition: 0.3s;
+    }
+    .navbar ul
+    {
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 4;
+        border-radius: 10px;
+       -webkit-box-shadow: -1px 24px 30px -7px rgba(0,0,0,0.75);
+       -moz-box-shadow: -1px 24px 30px -7px rgba(0,0,0,0.75);
+       box-shadow: -1px 24px 30px -7px rgba(0,0,0,0.75);
+    }
+    .navbar ul li a
+    {
+        display: block;
+        margin: 0.1rem 1rem;
+        padding: 0.3rem;
+        text-align: center;
+        font-size: 2.5rem;
+        background-color: rgb(17, 17, 17,0.2);
+        border-radius: 1rem;
+        color: #fff;
+        font-weight: bold;
+    }
+    .activeHome,
+    .navbar ul li a:hover
+    {
+        transform: none;
+        transition: none;
+    }
+    .navbar.active
+    {
+        left: 0;
+    }
+}
+@media(max-width:451px)
+{
+    footer{
+        height: 45rem;
+    }
+    .credit_base_footer
+    {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 0;
+    }
+    .credit_footer1
+    {
+        width: 160%;
+        /* border: 1px solid yellow; */
+    }
+    .credit_footer1 ul
+    {
+        text-align: left;
+    }
+    .credit_footer2
+    {
+        width: 160%;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        /* border: 1px solid red; */
+        flex-direction: column;
+    }
+    .credit_footer2 .credit_sub_footer
+    {
+        margin: auto;
+    }
+    .credit_footer2 .credit_sub_footer .creditI
+    {
+        margin-left: -1rem;
+    }
+    .credit_social_media
+    {
+        margin-top: 1rem;
+        margin-right: 1rem;
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <title>CREDITi</title>
+</head>
+<body> 
+    <!-- nav bar -->
+    <header class="sticky">
+        <!-- logo -->
+        <div class="menu-bar">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="logo">
+            <div class="credit_image">
+                <img src="{% static 'images/Group6.png' %}" alt="">
+            </div>
+            <div class="creditIt">
+                <a href="#">CREDITiT</a>
+            </div>
+        </div>
+        <!-- navbar -->
+        <div class="navbar">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">product</a></li>
+                <li><a href="#">support</a></li>
+                <li><a href="#">about</a></li>
+            </ul>
+        </div>
+        <!-- apply for loan -->
+        <div class="credit_apply">
+            <button><a href="#">apply for loan</a></button>
+        </div>
+    </header>
+    <!-- End Navbar -->
+    {% block content %}{% endblock content %}
+    <!-- footer? -->
+    <footer>
+        <div class="credit_base_footer">
+            <div class="credit_footer1">
+                <ul>
+                    <li><a href="#">compare</a></li>
+                    <li><a href="#">products</a></li>
+                    <li><a href="#">support</a></li>
+                    <li><a href="#">about</a></li>
+                </ul>
+            </div>
+            <div class="credit_footer2">
+                <div class="credit_sub_footer">
+                    <div class="credit_image">
+                        <img src="{% static 'images/Group6.png' %}" alt="">
+                    </div>
+                    <div class="creditIt">
+                        <a href="#">CREDITiT</a>
+                    </div>
+                </div>
+                <div class="creditInvite">
+                    <h1>We invite you</h1>
+                </div>
+            </div>
+        </div>
+        <div class="credit_social_media">
+            <h1>follow us</h1>
+            <div class="credit_social">
+                <div class="credit_social_images1">
+                    <img src="{% static 'images/instagram1.png' %}" alt="">
+                </div>
+                <div class="credit_social_images2">
+                    <img src="{% static 'images/twitter.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="{% static 'js/base.js' %}"></script>
+</body>
+</html>

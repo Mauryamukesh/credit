@@ -1,0 +1,410 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background: rgb(164,255,127);
+    background: linear-gradient(90deg, rgba(164,255,127,1) 0%, rgba(8,247,196,1) 100%);
+}
+.credit_home_container_1
+{
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 9rem;
+}
+.credit_sub_home1
+{
+    width: 15%;
+    margin: auto 4rem;
+    height: 13rem;
+    padding: 2rem 2rem 0 2rem;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.credit_sub_home_images1
+{
+    width: 90%;
+    margin: auto;
+}
+.credit_sub_home_images1 img
+{
+    width: 100%;
+    /* background: rgb(164,255,127);
+    background: linear-gradient(90deg, rgba(164,255,127,1) 0%, rgba(8,247,196,1) 100%); */
+}
+/* .credit_business
+{
+    margin-top: -1rem;
+} */
+.credit_business p
+{
+    text-align: center;
+    font-size: 1rem;
+    padding: 0 0 1rem 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.credit_home_loan
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 9rem;
+    margin-bottom: 3rem;
+    position: relative;
+    /* border: 1px solid red; */
+    padding: 0 5rem;
+}
+.left_credit_home
+{
+    /* border: 1px solid black; */
+    width: 50%;
+}
+.credit_perfect p
+{
+    font-size: 4rem;
+    line-height: 5rem;
+    color: #f0f808;
+    font-family: sans-serif;
+    text-shadow: 2px 2px #333;
+}
+.btn
+{
+    margin-top: 2rem;
+}
+.btn button
+{
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 15px;
+    background: rgb(136,13,136);
+    background: linear-gradient(90deg, rgba(136,13,136,1) 0%, rgba(46,1,42,1) 100%);
+}
+.btn button a
+{
+    text-decoration: none;
+    font-size: 4rem;
+    color: #fff;
+    text-transform: capitalize;
+}
+.right_credit_home
+{
+    /* border: 1px solid grey; */
+    position: relative;
+    width: 50%;
+}
+.credit_home_card
+{
+    width: 80%;
+    margin: auto;
+}
+.credit_home_card img
+{
+    width: 100%;
+}
+.credit_home_card_person
+{
+    position: absolute;
+    margin-top: -26rem;
+    margin-left: 15rem;
+}
+.credit_home_card_person img
+{
+    height: 32rem;
+}
+.credit_service
+{
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.credit_home_our_service h1
+{
+    text-align: center;
+    font-size: 9rem;
+    font-family: sans-serif;
+    color: #222;
+    text-transform: uppercase;
+    transform: scale(.5, 1);
+}
+.credit_home_service
+{
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.credit_home_speed
+{
+    width: 20%;
+    margin: auto 5.5rem;
+    /* height: 10rem; */
+    padding: 2rem 2rem 0 2rem;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.credit_home_speed_images
+{
+    width: 50%;
+    margin: auto;
+}
+.credit_home_speed_images img
+{
+    width: 100%;
+}
+.credit_home_speed_text
+{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.credit_home_speed_text p
+{
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+}
+.credit_home_compare
+{
+    display: flex;
+    justify-content: space-between;
+    margin: auto 3rem;
+    height: 20rem;
+    margin-top: 5rem;
+    padding: 0 1rem;
+    margin-bottom: 3rem;
+    border-radius: 10px;
+    /* border: 1px solid red; */
+    background-color: #fff;
+}
+.credit_home_left_compare
+{
+    width: 30%;
+    margin-top: -3rem;
+}
+.credit_home_left_compare img
+{
+    height: 26rem;
+}
+.credit_home_right_compare
+{
+    width: 70%;
+    margin: auto;
+}
+.credit_home_right_compare p
+{
+    font-size: 5rem;
+    padding: 0 0 0 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #BB0ACF;
+    background: linear-gradient(to right, #BB0ACF 0%, #F7B825 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.credit_business_report 
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 6rem 0 3rem 0;
+}
+.credit_business_report_images
+{
+    width: 30%;
+    margin: 0 3rem;
+}
+.credit_business_report_images img
+{
+    width: 100%;
+    height: auto;
+}
+/* ---------media quaries---------- */
+@media(max-width:1200px)
+{
+    html{
+        font-size: 55%;
+    }
+    .credit_home_card_person{
+        margin-left: 20rem;
+    }
+}
+@media(max-width:850px)
+{
+    .credit_home_card_person {
+        margin-left: 19rem;
+        margin-top: -28rem;
+    }
+}
+@media(max-width:767px)
+{
+    .credit_home_card_person{
+        margin-left: 17rem;
+    }
+}
+@media(max-width:675px)
+{
+    .credit_home_card_person
+    {
+        margin-left: 12rem;
+    }
+}
+@media(max-width:600px)
+{
+    .credit_home_container_1
+    {
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        display: flex;
+        margin-top: 8rem;
+    }
+    .credit_sub_home1
+    {
+        width: 70%;
+        /* display: flex;
+        flex-direction: column; */
+        height: auto;
+        margin: 2rem auto;
+    }
+    .credit_business p
+    {
+        font-size: 2rem;
+    }
+    .credit_business_report
+    {
+        flex-direction: column;
+    }
+    .credit_business_report_images
+    {
+        width: 70%;
+        margin: 2rem auto;
+    }
+    .credit_home_service
+    {
+        flex-direction: column;
+    }
+    .credit_home_speed
+    {
+        width: 70%;
+        margin: 2rem auto;
+    }
+    .credit_home_compare
+    {
+        width: 70%;
+        height: auto;
+        margin: 2rem auto;
+        flex-direction: column;
+    }
+    .credit_home_right_compare p
+    {
+        padding: 0.5rem;
+        font-size: 3rem;
+    }
+    .credit_home_left_compare img
+    {
+        margin: auto;
+    }
+    .credit_home_loan
+    {
+        flex-direction: column-reverse;
+    }
+    .left_credit_home
+    {
+        width: 70%;
+        margin: 2rem auto;
+    }
+    .right_credit_home
+    {
+        width: 100%;
+    }
+    .credit_home_card img
+    {
+        width: 90%;
+        margin: 2rem auto;
+    }
+    .credit_home_card_person
+    {
+        position: relative;
+    /* position: absolute; */
+       /* margin-top: -29rem; */
+    }
+    .credit_home_card_person img
+    {
+        /* height: 34rem; */
+        height: 43rem;
+        margin-left: 10rem;
+        margin-top: -12rem;
+    }
+    .left_credit_home
+    {
+        width: 100%;
+    }
+    .credit_perfect
+    {
+        width: 100%;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+    }
+    .btn
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media(max-width:555px)
+{
+    /* .credit_home_card_person
+    {
+    margin-top: -25rem;
+    margin-right: -2rem;
+   } */
+   .credit_home_card_person img
+   {
+        height: 40rem;
+        margin-top: -10rem;
+        margin-left: 4rem;
+   }
+}
+@media(max-width:475px)
+{
+    .credit_home_card_person img
+    {
+        height: 37rem;
+        margin-left: 0rem;
+        margin-top: -5rem;
+    }
+}
+@media(max-width:420px)
+{
+    .credit_home_card_person img
+    {
+        height: 34rem;
+        margin-left: -3rem;
+        margin-top: -2rem;
+    }
+}
+@media(max-width:375px)
+{
+    .credit_home_card_person img
+    {
+        height: 32rem;
+        margin-left: -6rem;
+        margin-top: 0rem;
+    }
+}
+@media(max-width:335px)
+{
+    .credit_home_card_person img
+    {
+        height: 29rem;
+        margin-left: -8rem;
+        margin-top: 3rem;
+    }
+}

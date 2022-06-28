@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/compare.css' %}">
+</head>
+<body>
+    <div class="compare_header">
+        <h1>Find the best Personal Loan for you</h1>
+    </div>
+    <div class="compare_table">
+        <table>
+            <tr>
+                <th>Bank Name</th>
+                <th>Rate of interest</th>
+                <th>Processing Fee Range</th>
+                <th>Loan Amount</th>
+            </tr>
+            <tr class="compare_bank">
+                <td><img src="{% static 'images/hdfcBank.png' %}" alt=""></td>
+                {% comment %} <td><img src="images/hdfcBank.png" alt=""></td> {% endcomment %}
+                <td><h1>13.00% - 30.00% <br>Fixed</h1></td>
+                <td><h1>Min Rs 1.000 <br>One time fee</h1></td>
+                <td><h1 class="upto">up to Rs.40L</h1></td>
+            </tr>
+            <tr class="compare_bank">
+                <td><img src="{% static 'images/axisBank.png' %}" alt=""></td>
+                {% comment %} <td><img src="images/axisBank.png" alt=""></td> {% endcomment %}
+                <td><h1>13.00% - 30.00% <br>Fixed</h1></td>
+                <td><h1>Min Rs 1.000 <br>One time fee</h1></td>
+                <td><h1 class="upto">up to Rs.40L</h1></td>
+            </tr>
+            <tr class="compare_bank">
+                <td><img src="{% static 'images/7-indusind-logo.png' %}" alt=""></td>
+                {% comment %} <td><img src="images/7-indusind-logo.png" alt=""></td> {% endcomment %}
+                <td><h1>13.00% - 30.00% <br>Fixed</h1></td>
+                <td><h1>Min Rs 1.000 <br>One time fee</h1></td>
+                <td><h1 class="upto">up to Rs.40L</h1></td>
+            </tr>
+            <tr class="compare_bank">
+                <td><img src="{% static 'images/index1.jpg' %}" alt=""></td>
+                {% comment %} <td><img src="images/index1.jpg" alt=""></td> {% endcomment %}
+                <td><h1>13.00% - 30.00% <br>Fixed</h1></td>
+                <td><h1>Min Rs 1.000 <br>One time fee</h1></td>
+                <td><h1 class="upto">up to Rs.40L</h1></td>
+            </tr>
+            <tr class="compare_bank">
+                <td><img src="{% static 'images/Yes_Bank_logo.svg.png' %}" alt=""></td>
+                {% comment %} <td><img src="{% 'images/Yes_Bank_logo.svg.png' %}" alt=""></td> {% endcomment %}
+                <td><h1>13.00% - 30.00% <br>Fixed</h1></td>
+                <td><h1>Min Rs 1.000 <br>One time fee</h1></td>
+                <td><h1 class="upto">up to Rs.40L</h1></td>
+            </tr>
+            <tr class="compare_bank">
+                <td><img src="{% static 'images/Kotak_Mahindra_Bank_logo.png' %}" alt=""></td>
+                <td><h1>13.00% - 30.00% <br>Fixed</h1></td>
+                <td><h1>Min Rs 1.000 <br>One time fee</h1></td>
+                <td><h1 class="upto">up to Rs.40L</h1></td>
+            </tr>
+        </table>
+    </div>
+</body>
+{% endblock content %}
