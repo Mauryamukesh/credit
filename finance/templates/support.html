@@ -1,0 +1,208 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/support.css' %}">
+</head>
+{% comment %} {% block content %} {% endcomment %}
+<body>
+    <header class="head">
+        <div>
+            <h1>Your privacy at a glance</h1>
+            <p>Hello. We are Juro Online Limited (known by human as Juro). Here's a summary of how we protect your data and respect your privacy.</p>
+        </div>
+    </header>
+    <section class="info">
+        <article class="left_info">
+            <div class="collect">
+                <div class="link">
+                    <a href="#">Tell me why</a>
+                </div>
+                <div class="image"> 
+                    <img src="{% static 'images/file.svg' %}" alt="">
+                    {% comment %} <img src="./images/file.svg" alt="bar"> {% endcomment %}
+                    <h2>Type of data we collect</h2>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>Contact details</li>
+                        <li>Financial information</li>
+                        <li>Data from your contracts</li>
+                        <li>Data that identifies you</li>
+                        <li>Data on how use Juro</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="setting collect">
+                <div class="link">
+                    <a href="#">How exactly?</a>
+                </div>
+                <div class="image"> 
+                    <img src="{% static 'images/setting.svg' %}" alt="">
+                    {% comment %} <img src="./images/setting.svg" alt="setting"> {% endcomment %}
+                    <h2>How we use your data</h2>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>To keep Juro running</li>
+                        <li>To help us improve Juro</li>
+                        <li>To give personalised customer support</li>
+                        <li>To send you marketing messages (but only if you tell us to)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="parties collect">
+                <div class="link">
+                    <a href="#">What do they do?</a>
+                </div>
+                <div class="image"> 
+                    <img src="{% static 'images/third-party.svg' %}" alt="">
+                    {% comment %} <img src="./images/third-party.svg" alt="party"> {% endcomment %}
+                    <h2>Third parties who process your data</h2>
+                </div>
+                <div class="list">
+                    <p class="pragraph" style="opacity: 0.8;padding-bottom: 10px;">The following services help us keep Juro running by storing or processing your data on our behalf:</p>
+                    <ul>
+                        <li>Infrastructure: Algolia, Aws, MongoDB</li>
+                        <li>Analytics: Google Analytics, Heap, Mixpanel, Metabase, Hotjar</li>
+                        <li>Integratios: (by our request) Salesforce, Slack, Google</li>
+                        <li>Comms: Hubspot, Intercom, Sendgrid, Sumo</li>
+                        <li>Payments: Stripe</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cookies collect">
+                <div class="link">
+                    <a href="#">How can I choose?</a>
+                </div>
+                <div class="image"> 
+                    <img src="{% static 'images/cookies.svg' %}" alt="">
+                    {% comment %} <img src="./images/cookies.svg" alt="cookies"> {% endcomment %}
+                    <h2>We use cookies</h2>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>We use onlynecessary cookies to run and improve  the service</li>
+                        <li>Our third party service provider use cookies too, which they control</li>
+                        <li>You can turn off cookies but this will mean for example that we can't recognise you in-app messaging or we can't resolve issues so efficiently</li>
+                        <li>Comms: Hubspot, Intercom, Sendgrid, Sumo</li>
+                        <li>Payments: Stripe</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+        <article class="right">
+            <div class="right_info">
+                <div class="link">
+                    <a href="#">Am I included?</a>
+                </div>
+                <div class="image">
+                    <img src="{% static 'images/bar-graph-care.svg' %}" alt="">
+                    {% comment %} <img src="./images/bar-graph-care.svg" alt="file"> {% endcomment %}
+                    <h2>When and how we collect data</h2>
+                </div>
+                <div class="prag">
+                    <p>We colloct data from people browsing our website, customers of Juro andn people who view / sign contracts through Juro, when...</p>
+                </div>
+                <div class="before">
+                    <div class="col">
+                        <img src="{% static 'images/man.svg' %}" alt="">
+                        {% comment %} <img src="./images/man.svg" alt="man"> {% endcomment %}
+                        <p class="give">DATA YOU GIVE</p>
+                        <div class="data">    
+                            <ul>
+                                <li><div></div></li>
+                                <li><div></div></li>
+                                <li><div></div></li>
+                                <li><div></div></li>
+                                <li><div></div></li>
+                                <li><div></div></li>
+                                <li><div></div></li>
+                                <li><div></div></li>
+                                <li><div></div></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col">
+                            <img src="{% static 'images/drone-delivery.svg' %}" alt="">
+                            {% comment %} <img src="./images/drone-delivery.svg" alt="drone"> {% endcomment %}
+                            <p class="we">DATA WE COLLECT</p>
+                        </div>
+                        <div class="collect">
+                            <ul>
+                                <li>
+                                    <div>
+                                        <p>You browse any page of our website</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <p>You request a demo of Juro</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <p>We call you</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <p>You use Juro</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <p>You receive emails from us</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <p>You view and sign contracts</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <p>you chat with usfor customer support </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <p>You connect integrations (like slack)</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <p>You opt-in to marketing messages</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="link" style="margin-top:10px;">
+                        <a href="#">What can I do?</a>
+                    </div>
+                    <div class="last">
+                        <div class="col">
+                            <img src="{% static 'images/index-finger-5-1103331.png' %}" alt="">
+                            {% comment %} <img src="./images/index-finger-5-1103331.png" alt="index"> {% endcomment %}
+                            <h2>Known Your right</h2>
+                        </div>
+                        <ul>
+                            <li>Access information we hold on you</li>
+                            <li>Opt-out of marketing comms</li>
+                            <li>Port your data to another service</li>
+                            <li>Be forgotten by Juro</li>
+                            <li>Complain about us</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+</body>
+{% endblock content %}
+

@@ -1,0 +1,277 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.contact_slide_images
+{
+    width: 100%;
+    /* height: auto; */
+    position: relative;
+    /* z-index: 1; */
+    background-color: linear-gradient(to right,rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+}
+/* .col_images
+{
+    width: 100%;
+    height: 100vh;
+} */
+.col_images img
+{
+    width: 100%;
+    height: 102vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-position: center;
+    background-repeat: none;
+    /* opacity: 5; */
+    filter: brightness(50%);
+    background-size: 100% 100%;
+}
+.contact_container
+{
+    width: 100%;
+    height: auto;
+    top: 4rem;
+    position: absolute;
+    display: flex;
+}
+.spanDiv
+{
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+}
+.dots {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active
+{
+    background-color: #111;
+}
+.left_contact_container,.right_contact_container
+{
+    flex-basis: 50%;
+    z-index: 1;
+}
+.left_contact_credit
+{
+    margin: 5rem;
+}
+.contact_address
+{
+    margin: 3rem 0;
+    display: flex;
+}
+.location_pin_contact
+{
+    padding: 2rem;
+    /* border: 1px solid green; */
+    border-radius: 50%;
+    margin-right: 2rem;
+    background-color: #fff;
+}
+.location_pin_contact i
+{
+    font-size: 2rem;
+}
+.location_pin_address
+{
+    margin-top: 2rem;
+}
+.location_pin_address p
+{
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-family: monospace;
+    color: #fff;
+}
+.contact_phone
+{
+    margin: 3rem 0;
+    display: flex;
+}
+.contact_phone_icon
+{
+    padding: 2rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+    background-color: #fff;
+}
+.contact_phone_icon i
+{
+    font-size: 2rem;
+}
+.contact_phone_number
+{
+    margin-top: 2rem;
+}
+.contact_phone_number p
+{
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-family: monospace;
+    color: #fff;
+}
+.contact_email
+{
+    margin: 3rem 0;
+    display: flex;
+}
+.contact_email_icon
+{
+    padding: 2rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+    background-color: #fff;
+}
+.contact_email_icon i
+{
+    font-size: 2rem;
+}
+.contact_email_address
+{
+    margin-top: 2rem;
+}
+.contact_email_address p
+{
+    font-size: 2rem;
+    /* text-transform: capitalize; */
+    font-family: monospace;
+    color: #fff;
+}
+.right_contact_form
+{
+    /* margin: 1rem; */
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+
+}
+.contact_name
+{
+    margin: 1rem 0;
+    width: 100%;
+}
+.contact_name input
+{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+}
+.contact_phone_id
+{
+    margin: 1rem 0;
+    width: 100%;
+}
+.contact_phone_id input
+{
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 10px;
+}
+.contact_email_id
+{
+    margin: 1rem 0;
+    width: 100%;
+}
+.contact_email_id input
+{
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 10px;
+}
+.contact_message
+{
+    margin: 1rem 0;
+    width: 100%;
+}
+.contact_message textarea
+{
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 10px;
+}
+label
+{
+    font-size: 2rem;
+    color: #fff;
+    font-family: monospace;
+    text-transform: capitalize;
+}
+/* .send
+{
+    margin: auto;
+} */
+.send a
+{
+    text-align: center;
+    text-decoration: none;
+}
+.send a button
+{
+    padding: 0.3rem 1rem;
+    font-size: 1.5rem;
+    font-family: monospace;
+    text-transform: capitalize;
+    border-radius: 10px;
+    background-color: #00eeff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+/* media quaries */
+@media(max-width:1200px)
+{
+    html{
+        font-size: 60%;
+    }
+    .col_images img{
+        width: 100%;
+        height: 130vh;
+    }
+}
+@media(max-width:720px)
+{
+    .contact_container
+    {
+        flex-direction: column;
+    }
+    .left_contact_container
+    {
+        width: 100%;
+        /* border: 1px solid red; */
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+    .contact_slide_images
+    {
+        /* width: 100%; */
+        height: auto;
+    }
+    .col_images img{
+        width: 100%;
+        height: 220vh;
+        /* height: auto; */
+    }
+}
+@media(max-width:400px)
+{
+    html{
+        font-size: 50%;
+    }
+    .col_images img{
+        height: 200vh;
+    }
+}

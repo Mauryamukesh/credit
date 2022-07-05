@@ -11,3 +11,7 @@ def applicationForm(request):
     return render(request,'applicationForm.html')
 def compare(request):
     return render(request,'compare.html')
+def about(request):
+    return render(request,'about.html')
+def support(request):
+    return render(request,'support.html')

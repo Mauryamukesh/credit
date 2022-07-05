@@ -161,7 +161,7 @@ footer
     width: 100%;
     height: 30rem;
     border-radius: 20px;
-    /* bottom: 0; */
+    bottom: 0;
     background-color: #111;
 }
 footer .credit_base_footer

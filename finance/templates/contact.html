@@ -4,8 +4,99 @@
 {% block content %}
 <head>
     <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    this is contact
+    {% comment %} this is contact {% endcomment %}
+    <div class="contact_slide_images">
+        <div class="col_images">
+            {% comment %} <img src="{% static images/banking1.jpg %}" alt=""> {% endcomment %}
+            <img src="{% static 'images/banking1.jpg' %}" alt="">
+        </div>
+        <div class="col_images">
+            <img src="{% static 'images/banking2.jpg' %}" alt="">
+        </div>
+        <div class="col_images">
+            <img src="{% static 'images/banking3.jpg' %}" alt="">
+        </div>
+        <div class="col_images">
+            <img src="{% static 'images/banking4.jpg' %}" alt="">
+        </div>
+        <div class="col_images">
+            <img src="{% static 'images/banking5.jpg' %}" alt="">
+        </div>
+        <div class="spanDiv">
+            <span class="dots"></span> 
+            <span class="dots"></span> 
+            <span class="dots"></span>
+            <span class="dots"></span>
+            <span class="dots"></span> 
+        </div>
+    </div>
+    <div class="contact_container">
+        <div class="left_contact_container">
+            <div class="left_contact_credit">
+                <div class="contact_address">
+                    <div class="location_pin_contact">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="location_pin_address">
+                        <p>address</p>
+                    </div>
+                </div>
+                <div class="contact_phone">
+                    <div class="contact_phone_icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="contact_phone_number">
+                        <p>8882383052</p>
+                    </div>
+                </div>
+                <div class="contact_email">
+                    <div class="contact_email_icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="contact_email_address">
+                        <p>mukeshmaurya2423@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right_contact_container">
+            <div class="right_contact_form">
+                <form action="">
+                    <div class="contact_name">
+                        <div class="contact_sub_name">
+                            <label for="">name</label>
+                        </div>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="contact_phone_id">
+                        <div class="contact_sub_name">
+                            <label for="">phone</label>
+                        </div>
+                        <input type="number" name="" id="">
+                    </div>
+                    <div class="contact_email_id">
+                        <div class="contact_sub_name">
+                            <label for="">email</label>
+                        </div>
+                        <input type="email" name="" id="">
+                    </div>
+                    <div class="contact_message">
+                        <div class="contact_sub_name">
+                            <label for="">message</label>
+                        </div>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="send">
+                        <a href=""><button>send</button></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    {% comment %} <script src="contact.js"></script> {% endcomment %}
+    <script src="{% static 'js/contact.js' %}"></script>
 </body>
 {% endblock content %}
