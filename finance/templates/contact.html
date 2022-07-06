@@ -64,30 +64,30 @@
         </div>
         <div class="right_contact_container">
             <div class="right_contact_form">
-                <form action="">
+                <form action="" name="contactForm" onsubmit=" return validateContact()">
                     <div class="contact_name">
                         <div class="contact_sub_name">
-                            <label for="">name</label>
+                            <label for="">name</label><p id="username"></p>
                         </div>
-                        <input type="text" name="" id="">
+                        <input type="text" name="username" id="">
                     </div>
                     <div class="contact_phone_id">
                         <div class="contact_sub_name">
-                            <label for="">phone</label>
+                            <label for="">phone</label><p id="phoneNumber"></p>
                         </div>
-                        <input type="number" name="" id="">
+                        <input type="number" name="phoneNumber" id="">
                     </div>
                     <div class="contact_email_id">
                         <div class="contact_sub_name">
-                            <label for="">email</label>
+                            <label for="">email</label><p id="usermail"></p>
                         </div>
-                        <input type="email" name="" id="">
+                        <input type="email" name="emailId" id="">
                     </div>
                     <div class="contact_message">
                         <div class="contact_sub_name">
-                            <label for="">message</label>
+                            <label for="">message</label><p id="Contactusermessage"></p>
                         </div>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <textarea name="usermessage" id="" cols="30" rows="10"></textarea>
                     </div>
                     <div class="send">
                         <a href=""><button>send</button></a>
